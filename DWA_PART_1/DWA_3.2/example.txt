@@ -1,0 +1,49 @@
+Question 1 
+
+// User story(ies) in Gherkin syntax for the “+” button.
+
+My Feature: Calculator Addition
+  As a user
+  I want to add two numbers
+  So that I can calculate their sum
+
+My Scenario: Adding two positive numbers
+  Given I am on the calculator app
+  When I enter the number "10"
+  And I press the "+" button
+  And I enter the number "20"
+  And I press the "=" button
+  Then I should see the result "30" on the calculator screen
+
+My Second Scenario: Adding a positive and a negative number
+  Given I am on the calculator app
+  When I enter the number "10"
+  And I press the "+" button
+  And I enter the number "-7"
+  And I press the "=" button
+  Then I should see the result "3" on the calculator screen
+
+Question 2
+
+// User story(ies) in Gherkin syntax for the “-” button.
+
+Feature: Calculator Subtraction
+  As a user
+  I want to subtract two numbers
+  So that I can calculate their difference
+
+Scenario: Subtracting two positive numbers
+  Given I am on the calculator app
+  When I enter the number "10"
+  And I press the "-" button
+  And I enter the number "3"
+  And I press the "=" button
+  Then I should see the result "7" on the calculator screen
+
+Scenario: Subtracting a negative number from a positive number
+  Given I am on the calculator app
+  When I enter the number "8"
+  And I press the "-" button
+  And I enter the number "-5"
+  And I press the "=" button
+  Then I should see the result "13" on the calculator screen
